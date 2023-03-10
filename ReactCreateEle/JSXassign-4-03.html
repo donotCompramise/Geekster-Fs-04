@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+       *{ margin:0px;}
+    </style>
+   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+        <div id="root">  </div>
+
+        <script type="text/babel"> 
+        
+        let mainCard={
+            height:"550px",width:"470px",boxShadow: "0px 0px 5px",margin:"auto",marginTop:"20px",backgroundColor:"silver"
+        }
+        let innerCrad={
+            height:"470px",width:"400px",boxShadow: "0px 0px 5px",textAlign:"center",backgroundColor:"#ffffff",borderRadius:"10px"}
+        let bottomCard={
+            display:"flex",justifyContent:"space-evenly",width:"400px",marginTop:"50px"
+        }
+        let imgCard={display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center",paddingTop:"45px"}
+        function card(){
+            return <div style={mainCard}>
+                <div style={imgCard}>
+                <div style={innerCrad}>
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBwgu1A5zgPSvfE83nurkuzNEoXs9DMNr8Ww&usqp=CAU" alt="profile" height="300px" width="400px" />
+            <h1 style={{fontFamily:"Sans-serif"}}>Cutie girl</h1>
+            <span style={{color:"grey"}}>UI/UX Designer</span>
+                    
+                <div style={bottomCard}>
+                    <div>
+                        <h4>26</h4>
+                        <span style={{color:"grey"}}>Shoot</span>
+                        </div>
+                        <div>
+                            <h4>94</h4>
+                            <span style={{color:"grey"}}>Following</span>
+                        </div>
+                        <div>
+                            <h4>196</h4>
+                            <span style={{color:"grey"}}>Followers</span>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+        }
+        ReactDOM.render(card(),document.getElementById('root'))
+        </script>
+</body>
+</html>
