@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0px;
+        }
+    </style>
+   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+        <div id="root">  </div>
+
+        <script type="text/babel">
+             let container={
+            width:"600px",
+            height:"320px",
+            boxShadow:"0px 0px 5px black",
+            margin:"auto",
+            marginTop:"130px",
+            textAlign:"center",
+            backgroundImage: 'url("https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683_960_720.png")'
+            
+        } 
+        let card={
+            display:"flex",
+            justifyContent:"space-between",
+            alignItems:"center",
+            width:"600px",
+            height:"40px",
+            backgroundColor:"black",
+            color:"white"
+        
+        }
+        let image={
+       display:"flex",
+       justifyContent:"space-between",
+       flexDirection:"column",
+       height:"275px",
+       fontFamily:"Sans-serif"
+           
+        }
+        function createCard(){
+            return <div style={container}>
+                <div style={card}>
+                    <h3 style={{fontFamily:"Cursive"}}>LOGO</h3>
+                    <div style={{display:"flex",justifyContent:"space-around",
+                    alignItems:"center", width:"300px",fontSize:"12px"}}>
+                        <p>HOME</p>
+                        <p>ABOUT</p>
+                        <p>ORDER</p>
+                        <p>CONTACT</p>
+                        </div>
+                    </div>
+                    <div style={image}>
+                    <h2 style={{marginTop:"10px"}}>HOME</h2>
+                    <p style={{fontSize:"12px"}}>Made with ❤️ by <span style={{color:"red"}}>Learnig Robo</span></p>
+                </div>
+                </div>
+        }
+        
+        ReactDOM.render(createCard(),document.getElementById('root'));
+        
+        </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+        <div id="root"></div>
+        <script type="text/babel"> 
+        let div=React.createElement('div',{style:{width:"650px",margin:"auto",fontFamily:"Sans-serif",fontSize:"18px",lineHeight:"1.5"}},[
+            <h1>Learn web developement</h1>,
+            <p>Welcome to the MDN learning area. This set of articles aims to guide complete beginners to web developement with all that they need to start coding websites.</p>,
+            <p> the aim of this area of MDN is not to take you from "beeginner" to "expert" but to take you from "beginner" to "comfortable". from there, you should be able to start making your way, learning from <a href="#">the rest of MDN</a>,
+                and other intermediate to advanced resources that assumes a lot of previous knowledge.</p>,
+            <p>If you are a computer beginner, web developement can be challenging - we will hold your hand and provide enough detail for you to feel comfortable and learn the topics properly. you should feel at home whether you are a student learning web developement (on your own or as part of class), a techaer looking for class materials, a hobbyist, or someone who just wants to understand more about how web technologies work.</p> 
+        ])
+        
+        ReactDOM.render(div,document.getElementById('root'));
+        </script>
+</body>
+</html>

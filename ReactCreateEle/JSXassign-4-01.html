@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin:0px
+        }
+    </style>
+   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+<body>
+        <div id="root">  </div>
+
+        <script type="text/babel"> 
+        let card={
+            width:"450px",
+            height:"450px",
+            boxShadow:"0px 0px 5px black",
+            margin:"auto",
+            marginTop:"130px"
+        }
+        let image={
+            display:"flex",
+            justifyContent:"center",
+            alignItems:"center",
+            flexDirection:"column",
+            paddingTop:"50px"
+        }
+        let post={
+            display:"flex",justifyContent:"space-evenly",textAlign:"center",marginTop:"50px"
+        }
+        let btn={width:"100px",height:"50px",borderRadius:"10px",backgroundColor:"purple",color:"white",border:"opx",border: "none"}
+        let btn2={width:"100px",height:"50px",borderRadius:"10px",backgroundColor:"#AE0000",color:"white",border:"opx", border: "none"}
+
+       let div= <div style={card}>
+            <div style={image}>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHkU1Ir80wzLYmX41LkXvogY5sPq9lUozr_0Kjwz3nKqgRurNyZ-Sl3TOmUKToViHLl_g&usqp=CAU" alt="profile" width="100px" height="100px" style={{borderRadius:"50%"}}/>
+            <div style={{  display:"flex",
+            justifyContent:"center",alignItems:"center", flexDirection:"column", marginTop:"20px"}}>
+            <h3>Alexandra Caulea</h3>
+            <p style={{color:"grey"}}>I enjoyed drinking a cup of coffee every day</p></div>
+        </div>
+            <div style={post}>
+                <div><h4>172</h4>
+                <p style={{color:"grey"}}>POSTS</p>
+                    </div>
+                    <div><h4>20</h4>
+                <p style={{color:"grey"}}>FOLLOWING</p>
+                    </div>
+                    <div><h4>47</h4>
+                <p style={{color:"grey"}}>FOLLOWERS</p>
+                    </div>
+                </div>
+                <div style={{display:"flex",justifyContent:"center",gap:"30px",paddingTop:"60px"}}>
+                    <button style={btn}>FOLLOW</button>,
+        <button style={btn2}>MESSAGE</button>
+                    </div>
+                </div>
+        ReactDOM.render(div,document.getElementById('root'));
+        </script>
+</body>
+</html>

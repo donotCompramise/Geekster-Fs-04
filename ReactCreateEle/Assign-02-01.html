@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0px;
+        }
+    </style>
+   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+        <div id="root">  </div>
+
+        <script type="text/babel">
+        let div = React.createElement('div',{style:{height:"550px",width:"470px",boxShadow: "0px 0px 5px",margin:"auto",marginTop:"20px",backgroundColor:"silver"}},[
+        React.createElement('div',{style:{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center",paddingTop:"45px"}},[
+        React.createElement('div',{style:{height:"470px",width:"400px",boxShadow: "0px 0px 5px",textAlign:"center",backgroundColor:"#ffffff",borderRadius:"10px"}},[
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBwgu1A5zgPSvfE83nurkuzNEoXs9DMNr8Ww&usqp=CAU" alt="profile" height="300px" width="400px" />,
+            <h1 style={{fontFamily:"Sans-serif"}}>Cutie girl</h1>,
+            <span style={{color:"grey"}}>UI/UX Designer</span>,
+            React.createElement('div',{style:{display:"flex",justifyContent:"space-evenly",width:"400px",marginTop:"50px",}},[
+            React.createElement('div',null,[
+           <h4>26</h4>,
+           <span style={{color:"grey"}}>Shoot</span>
+            ]),
+            React.createElement('div',null,[
+           <h4>94</h4>,
+           <span style={{color:"grey"}}>Following</span>
+            ]),
+            React.createElement('div',null,[
+           <h4>196</h4>,
+           <span style={{color:"grey"}}>Followers</span>
+            ]),
+            ]), 
+        ]),
+        ]),
+        ])
+        
+        ReactDOM.render(div,document.getElementById('root'))
+        </script>
+</body>
+</html>

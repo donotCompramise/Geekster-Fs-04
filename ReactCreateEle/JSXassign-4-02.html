@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+        <div id="root">  </div>
+
+        <script type="text/babel"> 
+        function CreateResume(){
+            return <div>
+                <h2>Kabir Sagar</h2>
+                <p>Software Developer, Educator at Geekster</p>
+                <a href="#">Linkedin Github</a>
+                <hr></hr>
+                <h2>Experiencer</h2>
+                <h3>Software developer at Amazon</h3>
+                <p>I work with amazon in transportation team, some more description Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, ullam! Maxime officiis consequuntur libero eaque reprehenderit quisquam nam ab vitae totam id commodi laborum enim, sint ea odit quasi soluta!',<br/>,'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident iusto ut praesentium modi. Incidunt atque voluptatem, dignissimos officiis reprehenderit est!</p>
+                <hr></hr>
+                <h2>Educator at Geekster</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ipsa at quisquam excepturi autem aspernatur numquam non ratione suscipit amet voluptatibus id, impedit cum eaque neque, quidem veritatis illo pariatur. Eligendi optio nobis fugiat nihil itaque, facere amet ratione quod numquam magnam? Pariatur quos totam repellat animi officia dolore cumque, reiciendis soluta autem, fugit incidunt, explicabo natus corrupti cum nemo ipsa repudiandae consequuntur? Reiciendis sit qui iure sequi accusamus recusandae nobis fugiat earum assumenda? Deleniti sit nemo cupiditate. Facilis, aliquam.</p>
+                <hr></hr>
+                <h1>Skills</h1>
+                <ul><li>Java</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    </ul>
+                <h1>Hobbis</h1>
+                <ul><li>Sleeping</li>
+                    <li>Playing Cricket</li>
+                    <li>Shuttle</li>
+                    </ul>
+                </div>
+        }
+        
+        function main(){
+          return  <CreateResume />
+        }
+        ReactDOM.render(main(),document.getElementById('root'))
+        </script>
+</body>
+</html>
+
+ 

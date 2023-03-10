@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+        <div id="root">  </div>
+
+        <script type="text/babel"> 
+        let div=React.createElement('div',{style:{width:"800px",fontFamily:"Sans-serif",fontSize:"22px", fontWeight: "500",margin:"auto"}},[
+            <h1>Topics covered</h1>,
+            <p>The following is a list of all the topics we cover in the MDN learning area.</p>,<br />,
+            <a href="#">Getting started with the web</a>,
+            <p>Provides a prectical introduction to web development for complete beginners</p>,<br />,
+            <a href="#">HTML- Structuring the web</a>,
+            <p>HTML is the language that was use to structure the different of our content and define what their meaning or purpose is. This topic teaches HTML in detail.</p>,
+                <br />,
+            <a href="#">CSS- Styling the web</a>,
+            <p>CSS is the language that we use to control our web content's style and layout,as well as adding behaviour like animation. This topic provides comprahensive coverage of CSS.</p>
+        ])
+        
+        ReactDOM.render(div,document.getElementById('root'));
+        </script>
+</body>
+</html>
